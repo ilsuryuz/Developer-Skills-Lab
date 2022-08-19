@@ -1,7 +1,9 @@
-// console.log("it works")
-
-$("button").on("click", function () {
-  let $input = $("#input").value;
-    $("#list").append(`<li><button id="delete-btn>">X</button>${$("#input").val()}<li>`);
-    console.log(this);
-  })
+// adds the skill user typed
+$("#add").on("click", function () {
+  $("ul").append(`<li><button id="delete-btn">X</button>${$("input").val()}</li>`);
+  $("input").val("");
+});
+// added button removes skill when pressed
+$("ul").on("click", "#delete-btn", function () {
+  $(this).closest("li").remove();
+})
