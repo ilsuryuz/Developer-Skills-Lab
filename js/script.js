@@ -1,6 +1,6 @@
 // adds the skill user typed
-$("#add").on("click", function () {
-  $("ul").append(`<li><button id="delete-btn">X</button>${$("input").val()}</li>`);
+$("#addSkill").on("click", function () {
+  $("ul").append(`<li><button class="inner" id="delete-btn">X</button>${$("input").val()}</li>`);
   $("input").val("");
 });
 // added button removes skill when pressed
